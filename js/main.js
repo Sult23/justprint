@@ -43,3 +43,30 @@ $('.popup__btn--close').on('click', function () {
 	$('.popup').removeClass('popup--active')
 	$('body').css('overflow', 'visible')
 })
+
+//toggle menu(burger)
+
+const tMenu = document.querySelector('.togglemenu>a')
+const navBar = document.querySelector('.navbar')
+
+tMenu.addEventListener('click', function () {
+	navBar.classList.toggle('active')
+	tMenu.classList.toggle('active')
+})
+
+//плавность скролла вниз
+$('.navbar__link').on('click', function () {
+	let href = $(this).attr('href')
+
+	$('html, body').animate(
+		{
+			scrollTop: $(href).offset().top,
+		},
+		{
+			duration: 800, // по умолчанию «400»
+			easing: 'linear', // по умолчанию «swing»
+		}
+	)
+
+	return false
+})
