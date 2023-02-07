@@ -18,12 +18,43 @@
 		<div class="scrollup">
 			<img src="img/arrow-up.svg" alt="arrow" class="scrollup__img" />
 		</div>
+		<div class="contacts">
+			<div class="contacts__inner">
+				<a
+					href="https://api.whatsapp.com/send?phone=87478638453"
+					class="contacts__link contacts__img--whatsapp"
+					target="_blank"
+				>
+					<img
+						src="img/whatsapp-icon.svg"
+						alt="whatsapp"
+						class="contacts__img"
+					/> </a
+				><a href="tel:87771256671" class="contacts__link contacts__img--call">
+					<img src="img/phone-icon.svg" alt="call" class="contacts__img" />
+				</a>
+			</div>
+		</div>
 		<header class="header">
 			<div class="container">
 				<div class="header__top">
 					<a href="#" class="logo">
 						<img src="img/logo.png" alt="logo" class="logo__img" />
 					</a>
+					<ul class="navbar">
+						<li class="navbar__item">
+							<a href="#footer" class="navbar__link">График работы</a>
+						</li>
+						<li class="navbar__item">
+							<a href="#footer" class="navbar__link">Контакты</a>
+						</li>
+						<li class="navbar__item">
+							<a href="#works" class="navbar__link">Наши услуги</a>
+						</li>
+						<li class="navbar__item">
+							<a href="#about" class="navbar__link">О нас</a>
+						</li>
+					</ul>
 					<div class="header__top-box">
 						<img src="img/Call02.svg" alt="call-icon" />
 						<a href="tel:87771256671" class="header__top-link"
@@ -31,20 +62,6 @@
 						</a>
 					</div>
 				</div>
-				<ul class="navbar">
-					<li class="navbar__item">
-						<a href="#footer" class="navbar__link">График работы</a>
-					</li>
-					<li class="navbar__item">
-						<a href="#footer" class="navbar__link">Контакты</a>
-					</li>
-					<li class="navbar__item">
-						<a href="#works" class="navbar__link">Наши услуги</a>
-					</li>
-					<li class="navbar__item">
-						<a href="#about" class="navbar__link">О нас</a>
-					</li>
-				</ul>
 				<div class="header__content">
 					<div class="header__content-box">
 						<h1 class="header__title">Печатаем ВСЕ на чем угодно</h1>
@@ -100,6 +117,12 @@
 				</div>
 			</div>
 		</header>
+		<div class="goto">
+			<div class="arrow-down">
+				<span></span>
+				<span></span>
+			</div>
+		</div>
 		<main>
 			<section id="works" class="works">
 				<div class="container">
@@ -112,15 +135,29 @@
 							</h4>
 						</div>
 						<div class="slider__inner-box">
+							<img src="img/banner.jpg" alt="slider" class="slider__img" />
+							<h4 class="slider__subtitle">
+								Печать и изготовление баннеров, x-banner, roll-up, pop-up
+							</h4>
+						</div>
+						<div class="slider__inner-box">
 							<img src="img/06.png" alt="slider" class="slider__img" />
 							<h4 class="slider__subtitle">Наклейки, Стикеры, Этикетки</h4>
+						</div>
+						<div class="slider__inner-box">
+							<img src="img/suvenir.jpg" alt="slider" class="slider__img" />
+							<h4 class="slider__subtitle">Печать на текстиле и сувенирах</h4>
 						</div>
 						<div class="slider__inner-box">
 							<img src="img/04.png" alt="slider" class="slider__img" />
 							<h4 class="slider__subtitle">
 								Брошюрки, Листовки, Флаера, Буклеты, Открытки, Конверты,
-								Награды, Дипломы,
+								Награды, Дипломы
 							</h4>
+						</div>
+						<div class="slider__inner-box">
+							<img src="img/design.jpg" alt="slider" class="slider__img" />
+							<h4 class="slider__subtitle">Разработка дизайна специалистами</h4>
 						</div>
 						<div class="slider__inner-box">
 							<img src="img/07.png" alt="slider" class="slider__img" />
@@ -131,7 +168,7 @@
 						<div class="slider__inner-box">
 							<img src="img/08.png" alt="slider" class="slider__img" />
 							<h4 class="slider__subtitle">
-								Бумажные пакеты и Бумажные стаканы
+								Бумажные пакеты и Бумажные стаканы и многое другое.
 							</h4>
 						</div>
 					</div>
@@ -151,7 +188,7 @@
 					</ul>
 					<p class="works__text">
 						Обратите внимание, что Just Print располагается в удобной локации.
-						Мы напечатаем, Вы останетесь довольны!
+						Мы напечатаем, вы останетесь довольны!
 					</p>
 				</div>
 			</section>
@@ -203,6 +240,14 @@
 							>
 						</div>
 						<div class="footer__contacts-box">
+							<h4 class="footer__subtitle">Почта</h4>
+							<a
+								href="mailto:justprint.kz@gmail.com"
+								class="footer__contacts__phone"
+								>justprint.kz@gmail.com</a
+							>
+						</div>
+						<div class="footer__contacts-box">
 							<h4 class="footer__subtitle">Адрес</h4>
 							<p class="footer__contacts-text">
 								ул.Шевченко уг. Розыбакиева , Центр строительных материалов
@@ -250,6 +295,17 @@
 									src="img/Insta01.svg"
 									alt="inst"
 									class="footer__social-img"
+								/>
+							</a>
+							<a
+								href="mailto:justprint.kz@gmail.com"
+								target="_blank"
+								class="footer__social footer__social--mail"
+							>
+								<img
+									src="img/mail-icon.svg"
+									alt="mail"
+									class="footer__social-img footer__social-img--mail"
 								/>
 							</a>
 						</div>

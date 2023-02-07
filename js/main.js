@@ -14,14 +14,23 @@ $(window).on('scroll', function () {
 	}
 })
 
+//arrow-down
+$(function () {
+	$('.goto').on('click', function () {
+		$('html, body').animate({
+			scrollTop: 850,
+		})
+	})
+})
+
 //slider
 $(function () {
 	$('.slider__inner').slick({
 		dots: true,
 		arrows: false,
-		speed: 300,
-		slidesToShow: 3,
 		autoPlay: true,
+		speed: 200,
+		slidesToShow: 3,
 	})
 })
 
