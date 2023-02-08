@@ -35,7 +35,6 @@ body {
 	text-rendering: optimizeSpeed;
 	line-height: 1.5;
 	font-family: 'Montserrat', sans-serif;
-	overflow-x: hidden;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -257,6 +256,7 @@ div.scrollup:hover {
 .popup__btn--close {
 	border: none;
 	background-color: transparent;
+	cursor: pointer;
 }
 .goto {
 	display: block;
@@ -355,20 +355,31 @@ div.scrollup:hover {
 	border: 2px solid rgb(51, 51, 51);
 	text-align: center;
 	margin-bottom: 20px;
-	min-height: 300px;
+	position: relative;
+	min-height: 333px;
 }
 .slider__subtitle {
-	font-size: 18px;
-	font-weight: 400;
-	margin-bottom: 10px;
+	font-size: 20px;
+	font-weight: 600;
+	padding: 10px 0;
+}
+.slider__link {
+	color: inherit;
 }
 .slider__img {
 	display: block;
-	margin: 0 auto;
 	margin-bottom: 13px;
 	width: 100%;
 	max-height: 184px;
 	min-height: 184px;
+}
+.slider__text {
+	margin-bottom: 10px;
+	padding: 0 5px;
+	text-align: left;
+}
+.slider__img:hover {
+	opacity: 0.8;
 }
 .slider__inner-box + .slider__inner-box {
 	margin-left: 14px;
@@ -437,7 +448,7 @@ div.scrollup:hover {
 .about__title {
 	font-size: 50px;
 	text-transform: uppercase;
-	font-weight: 400;
+	font-weight: 600;
 	margin-bottom: 30px;
 }
 .about__subtitle {
