@@ -206,6 +206,7 @@ div.scrollup:hover {
 	overflow-x: auto;
 	background: rgba(0, 0, 0, 0.7);
 	transition: 0.3s ease;
+	z-index: 10;
 }
 .popup.popup--active {
 	opacity: 1;
@@ -609,7 +610,7 @@ div.scrollup:hover {
 		display: inline-block;
 		position: relative;
 		width: 30px;
-		z-index: 999;
+		z-index: 5;
 	}
 	.togglemenu a span {
 		display: block;
@@ -787,6 +788,9 @@ div.scrollup:hover {
 }
 
 @media (max-width: 440px) {
+	.header {
+		max-height: 100vh;
+	}
 	.header__title {
 		font-size: 35px;
 		line-height: 40px;
@@ -815,5 +819,19 @@ div.scrollup:hover {
 	}
 	.footer__list-item::after {
 		font-size: 16px;
+	}
+	.popup__content {
+		width: auto;
+		padding: 10px;
+		width: 350px;
+	}
+	.popup__inner {
+		padding: 0;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		text-align: center;
+		margin-right: auto;
+		margin-left: 10px;
 	}
 }
