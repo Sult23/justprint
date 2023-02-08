@@ -788,6 +788,9 @@ div.scrollup:hover {
 }
 
 @media (max-width: 440px) {
+	.works {
+		overflow-x: hidden;
+	}
 	.header {
 		max-height: 100vh;
 	}
@@ -819,6 +822,9 @@ div.scrollup:hover {
 	}
 	.footer__list-item::after {
 		font-size: 16px;
+	}
+	.popup {
+		max-width: 375px;
 	}
 	.popup__content {
 		width: auto;
