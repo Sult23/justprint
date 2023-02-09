@@ -14,15 +14,6 @@ $(window).on('scroll', function () {
 	}
 })
 
-//arrow-down
-$(function () {
-	$('.goto').on('click', function () {
-		$('html, body').animate({
-			scrollTop: 850,
-		})
-	})
-})
-
 //slider
 $(function () {
 	$('.slider__inner').slick({
@@ -31,6 +22,26 @@ $(function () {
 		autoPlay: true,
 		speed: 200,
 		slidesToShow: 3,
+		responsive: [
+			{
+				breakpoint: 940,
+				settings: {
+					dots: true,
+					slidesToShow: 2,
+					centerPadding: '40px',
+				},
+			},
+			{
+				breakpoint: 750,
+				settings: {
+					dots: true,
+					arrows: false,
+					slidesToShow: 1,
+					centerMode: true,
+					adaptiveWidth: true,
+				},
+			},
+		],
 	})
 })
 
@@ -56,6 +67,22 @@ tMenu.addEventListener('click', function () {
 
 //плавность скролла вниз
 $('.navbar__link').on('click', function () {
+	let href = $(this).attr('href')
+
+	$('html, body').animate(
+		{
+			scrollTop: $(href).offset().top,
+		},
+		{
+			duration: 800, // по умолчанию «400»
+			easing: 'linear', // по умолчанию «swing»
+		}
+	)
+
+	return false
+})
+
+$('.goto__link').on('click', function () {
 	let href = $(this).attr('href')
 
 	$('html, body').animate(
