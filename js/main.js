@@ -22,17 +22,17 @@ $(function () {
 		autoPlay: true,
 		speed: 200,
 		slidesToShow: 3,
+		centerPadding: '14px',
 		responsive: [
 			{
 				breakpoint: 940,
 				settings: {
 					dots: true,
 					slidesToShow: 2,
-					centerPadding: '40px',
 				},
 			},
 			{
-				breakpoint: 750,
+				breakpoint: 635,
 				settings: {
 					dots: true,
 					arrows: false,
