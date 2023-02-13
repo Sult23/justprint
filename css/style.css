@@ -183,7 +183,7 @@ div.scrollup:hover {
 }
 .header__title {
 	color: #f93979;
-	font-size: 70px;
+	font-size: 60px;
 	line-height: 70px;
 	font-weight: 700;
 	margin-bottom: 20px;
@@ -364,11 +364,8 @@ div.scrollup:hover {
 	margin-bottom: 20px;
 	position: relative;
 	min-height: 350px;
-	/* margin: 0 14px; */
+	margin: 0 14px;
 }
-/* .slider__inner-box + .slider__inner-box {
-	margin-left: 14px;
-} */
 .slider__subtitle {
 	font-size: 20px;
 	font-weight: 600;
