@@ -377,7 +377,8 @@ div.scrollup:hover {
 .slider__img {
 	display: block;
 	margin-bottom: 13px;
-	width: 100%;
+	min-width: 100%;
+	object-fit: cover;
 	max-height: 184px;
 	min-height: 184px;
 }
@@ -400,6 +401,7 @@ div.scrollup:hover {
 	margin-left: auto;
 }
 .slick-dots button {
+	margin-top: 30px;
 	border: none;
 	border-radius: 50%;
 	background: #ffdd50;
@@ -605,6 +607,12 @@ div.scrollup:hover {
 		position: absolute;
 		right: 0;
 		opacity: 0.5;
+	}
+	.navbar__item {
+		font-size: 18px;
+	}
+	.header__top-link {
+		font-size: 16px;
 	}
 }
 
